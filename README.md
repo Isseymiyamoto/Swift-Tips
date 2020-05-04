@@ -20,7 +20,7 @@ class frameController: UIViewController{
 //MARK: - Properties
 
     let button: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("frameについて", for: .normal)
         button.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
         return button
@@ -28,7 +28,7 @@ class frameController: UIViewController{
 
 //MARK: - Lifecycle
 
-    override viewDidLoad(){
+    override func viewDidLoad(){
         super.viewDidLoad()
         
         view.addSubView(button)
