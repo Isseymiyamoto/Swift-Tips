@@ -10,8 +10,8 @@ Swiftに関しての知見を集める
 
 #### frame
 
-Viewのサイズや位置を決めるもの
-親Viewに対しての位置を指定する
+Viewのサイズや位置を決めるもの, 親Viewに対しての位置を指定する
+例えば下記では、view.addSubView(button)で親Viewはviewであるので、それに対してx方向0,y方向0に長さ100,200のbuttonを設置することになる。
 
 ```frame.swift
 
