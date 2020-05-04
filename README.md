@@ -10,8 +10,8 @@ Swiftに関しての知見を集める
 
 #### frame
 
-定義されたcomponent.
-
+Viewのサイズや位置を決めるもの
+親Viewに対しての位置を指定する
 
 ```frame.swift
 
