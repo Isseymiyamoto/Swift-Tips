@@ -17,17 +17,17 @@ Swiftに関しての知見を集める
 
     var isFollowed: Bool = false
     isSelect ? print("このユーザーにフォローされています") : print("このユーザーにはフォローされていません")
-    // このユーザーにはフォトーされていませんが出力される
+    // このユーザーにはフォローされていません が出力される
 
 ```
 
-## UIKit
+## UIKitに関する情報
 
 
 
 ## レイアウト
 
-### frame
+#### frame
 
 Viewのサイズや位置を決めるもの, 親Viewに対しての位置を指定する  
 例えば下記では、view.addSubView(button)で親Viewはviewであるので、それに対してx方向0,y方向0に長さ100,200のbuttonを設置することになる
