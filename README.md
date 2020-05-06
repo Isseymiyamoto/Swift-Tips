@@ -21,6 +21,25 @@ Swiftに関しての知見を集める
 
 ```
 
+### Nil Coalescing 演算子
+
+2つの値に関して、前者がnilであった場合、後者を返す
+
+```swift
+
+// MARK: - how to use
+    
+    // a ?? b
+    
+// MARK: - example 
+
+    var a:String? = nil
+    var b = "b"
+    
+    b = a as? String ?? ""
+    // bには""が代入される
+```
+
 ## UIKitに関する情報
 
 
