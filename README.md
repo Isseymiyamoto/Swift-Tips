@@ -23,17 +23,6 @@ Swiftに関しての知見を集める
 
 ## UIKitに関する情報
 
-###  UILabel
-
-UILabelに関する基本的な設定(よく使うプロパティ、関数など)
-
-```swift
-
-// MARK: Properties
-
-
-
-```
 
 ### UIButton
 
@@ -53,6 +42,11 @@ UIButtonに関する基本的な設定(よく使うプロパティ、関数な�
         // タイトル・imageの設置
         button.setTitle("タイトル", for: .normal)
         button.setImage(UIImage(named: "new_tweet"), for: .normal)
+        // タイトルのフォント設定
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        // ボーダーに関する設定
+        button.layer.borderColor = UIColor.twitterBlue.cgColor
+        button.layer.borderWidth = 1.25
         // actionハンドラの設定
         button.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
         
@@ -74,6 +68,44 @@ UIButtonに関する基本的な設定(よく使うプロパティ、関数な�
         // buttonが押された際の挙動をここに書く
         print("buttonが押されました")
     }
+
+
+```
+
+###  UILabel
+
+UILabelに関する基本的な設定(よく使うプロパティ、関数など)
+
+```swift
+
+// MARK: Properties
+
+
+
+```
+
+
+### UIImageView
+
+UIImageViewに関する基本的な設定(よく使うプロパティ、関数など)
+
+```swift
+
+// MARK: Properties
+    
+    let profileImageView: UIImageView = {
+        let iv = UIImageView()
+        // imageの元サイズからUIImageViewのサイズに拡大・縮小する際の方法についての設定
+        iv.contentMode = .scaleAspectFit
+        // border内にimageを収めるか否か　trueで収める
+        iv.clipsToBounds = true
+        // 背景色
+        iv.backgroundColor = .lightGray
+        // ボーダー色・幅
+        iv.layer.borderColor = UIColor.white.cgColor
+        iv.layer.borderWidth = 4
+        return iv
+    }()
 
 
 ```
