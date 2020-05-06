@@ -23,6 +23,18 @@ Swiftに関しての知見を集める
 
 ## UIKitに関する情報
 
+###  UILabel
+
+UILabelに関する基本的な設定(よく使うプロパティ、関数など)
+
+```swift
+
+// MARK: Properties
+
+
+
+```
+
 ### UIButton
 
 UIButtonに関する基本的な設定(よく使うプロパティ、関数など)
@@ -46,6 +58,15 @@ UIButtonに関する基本的な設定(よく使うプロパティ、関数な�
         
         return button
     }()
+    
+// MARK: Lifecycle
+    
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        
+        任意の親View.addSubView(actionButton)
+    
+    }
     
 // MARK: Selectors
     
