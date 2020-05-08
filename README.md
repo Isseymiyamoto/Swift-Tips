@@ -129,6 +129,28 @@ UIImageViewに関する基本的な設定(よく使うプロパティ、関数�
 
 ```
 
+### UIStackView
+
+UIStackViewに関する基本的な設定(よく使うプロパティ、関数など)
+
+```swift
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        
+        // 並べたい要素を配列に格納する
+        let stack = UIStackView(arrangedSubviews: [要素1, 要素2, 要素3])
+        // 要素を縦向きor横向きに並べるのかを選択
+        stack.axis = .vertical
+        // 要素への制約の与え方
+        stack.distribution = .fillProportionally
+        // 要素毎に開けるスペースの設定
+        stack.spacing = 4
+        // addSubView
+        view.addSubView(stack)
+    }
+
+```
+
 
 ## レイアウト
 
