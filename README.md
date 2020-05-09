@@ -137,6 +137,7 @@ UIStackViewに関する基本的な設定(よく使うプロパティ、関数�
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        
         // 並べたい要素を配列に格納する
         let stack = UIStackView(arrangedSubviews: [要素1, 要素2, 要素3])
         // 要素を縦向きor横向きに並べるのかを選択
@@ -145,11 +146,17 @@ UIStackViewに関する基本的な設定(よく使うプロパティ、関数�
         stack.distribution = .fillProportionally
         // 要素毎に開けるスペースの設定
         stack.spacing = 4
-        // addSubView
+        // 要素をどこに揃えて配置するかの設定
+        stack.alignment = .leading
+        
+
         view.addSubView(stack)
     }
 
 ```
+
+以下参考になるQiita
+> https://qiita.com/yucovin/items/ff58fcbd60ca81de77cb
 
 
 ## レイアウト
