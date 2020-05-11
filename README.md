@@ -195,5 +195,19 @@ class frameController: UIViewController{
 
 ### bounds
 
+## アニメーション
 
+UIViewクラスを継承しているUILabelやUIButtonなどはUIViewのクラス関数であるanimate関数を使用することで様々なアニメーションを簡単に行うことができる
+
+```swift
+
+// MARK: - how to use
+    
+    UIView.animate(withDuration: 何秒かけてアニメーションするか){
+        // どのような処理を行うか
+    }
+    
+// MARK: - example 
+
+    
 
