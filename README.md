@@ -161,6 +161,8 @@ UIStackViewに関する基本的な設定(よく使うプロパティ、関数�
 
 ## レイアウト
 
+・　boundsとframeの違いはoriginの位置
+
 ### frame
 
 Viewのサイズや位置を決めるもの, 親Viewに対しての位置を指定する  
