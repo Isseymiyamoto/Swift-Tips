@@ -9,6 +9,8 @@ iOSに関しての知見を集める
 
 private lazy var
 
+https://www.slideshare.net/tomohirokumagai54/lazy-var-cocoakansai-cswift
+
 weak var
 
 fileprivate func
