@@ -20,6 +20,27 @@ fileprivate func
 
 ```
 
+### 列挙型(enum)
+
+```swift
+
+enum 列挙型の名前: 各要素に割り当てたいData型{
+    case xxx
+    case xxx
+}
+
+enum NotificationType: Int{
+    case follow
+    case like
+    case reply
+    case retweet
+    case mention
+}
+
+let oneNotification = NotificationType.follow
+
+```
+
 ### 三項演算子
 
 何らかの値に呼応して、2つの選択肢が考慮される場合に用いられる
