@@ -56,6 +56,14 @@ let oneNotification = NotificationType.follow
     var isFollowed: Bool = false
     isFollowed ? print("このユーザーにフォローされています") : print("このユーザーにはフォローされていません")
     // 出力: このユーザーにはフォローされていません 
+    
+    
+    // another example 
+    
+    var config: NotificationType?
+    
+    config = .message
+    var icon_title = config === .message ? "message" : "reply"
 
 ```
 
