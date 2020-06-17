@@ -258,4 +258,14 @@ UIViewクラスを継承しているUILabelやUIButtonなどはUIViewのクラ�
 // MARK: - example 
 
     
+```
 
+
+## クラスの初期化に関して
+
+```swift
+
+init(coder: NSCoder)
+storyboards や nib を利用する場合に必要
+
+init()
