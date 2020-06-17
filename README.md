@@ -204,6 +204,8 @@ UIStackViewに関する基本的な設定(よく使うプロパティ、関数�
 以下参考になるQiita
 > https://qiita.com/yucovin/items/ff58fcbd60ca81de77cb
 
+## searchController
+後でまとめる
 
 ## レイアウト
 
