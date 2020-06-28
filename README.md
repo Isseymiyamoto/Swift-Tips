@@ -24,6 +24,8 @@ fileprivate func
 
 繰り返し処理
 
+```
+
 for 定数名 in 式 where式(省略可能){
     処理
 }
@@ -42,6 +44,8 @@ for i in 1..<5 {
 2
 3
 4
+
+```
 
 
 ### 列挙型(enum)
