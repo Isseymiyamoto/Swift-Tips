@@ -20,6 +20,30 @@ fileprivate func
 
 ```
 
+### for-in文
+
+繰り返し処理
+
+for 定数名 in 式 where式(省略可能){
+    処理
+}
+
+範囲演算子: Swiftでは、２つの数の間を表す構造体とそのインスタンスを生成する演算子「..<」　と「...」が用意されている
+
+A..<B  →  A <= x < B
+A...B  →  A <= x <= B
+
+for i in 1..<5 {
+    print(i)
+}
+
+// expected output
+1
+2
+3
+4
+
+
 ### 列挙型(enum)
 
 ```swift
