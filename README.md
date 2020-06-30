@@ -235,6 +235,37 @@ UIStackViewに関する基本的な設定(よく使うプロパティ、関数�
 ## searchController
 後でまとめる
 
+
+## UINavigationController関連
+
+### navigationController: UINavigationController? に関するプロパティ、メソッド
+
+```swift
+
+初期化
+
+public init(rootViewController: UIViewController) 
+引数に表示したいControllerを明記する
+
+メソッド
+
+画面遷移
+
+open func pushViewController(_ viewController: UIViewController, animated: Bool)
+指定したcontrollerに遷移する
+
+open func popViewController(animated: Bool) -> UIViewController?
+1つ前のcontrollerに戻す
+
+プロパティ
+
+open var isNavigationBarHidden: Bool
+trueでnavigationBarを隠す
+
+
+
+
+
 ## レイアウト
 
 ・　boundsとframeの違いはoriginの位置
