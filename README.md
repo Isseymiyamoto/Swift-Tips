@@ -313,6 +313,14 @@ class frameController: UIViewController{
 
 ### bounds
 
+
+### Auto Layout
+
+```swift
+プログラムでauto Layoutを実装するのに必要なプロパティ
+UIView.translatesAutoresizingMaskIntoConstraints = false
+```
+
 ## アニメーション
 
 UIViewクラスを継承しているUILabelやUIButtonなどはUIViewのクラス関数であるanimate関数を使用することで様々なアニメーションを簡単に行うことができる
