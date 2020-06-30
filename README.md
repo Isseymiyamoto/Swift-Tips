@@ -238,7 +238,7 @@ UIStackViewに関する基本的な設定(よく使うプロパティ、関数�
 
 ## UINavigationController関連
 
-### navigationController: UINavigationController? に関するプロパティ、メソッド
+### UINavigationController に関するプロパティ、メソッド
 
 ```swift
 
@@ -262,7 +262,18 @@ open func popViewController(animated: Bool) -> UIViewController?
 open var isNavigationBarHidden: Bool
 trueでnavigationBarを隠す
 
+```
 
+### UINavigationBar に関するプロパティ、メソッド
+
+```swift
+
+@available(iOS 11.0, *)
+open var prefersLargeTitles: Bool
+trueにすると、titleViewの幅がviewの幅いっぱいになって、左端からtitleが始まる？
+
+
+```
 
 
 
