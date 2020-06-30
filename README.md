@@ -9,6 +9,8 @@ iOSに関しての知見を集める
 
 private lazy var
 
+lazy loading means that it will not actually load that property on till it's time for it to happen
+
 https://www.slideshare.net/tomohirokumagai54/lazy-var-cocoakansai-cswift
 
 weak var
