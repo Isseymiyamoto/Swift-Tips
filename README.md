@@ -8,14 +8,18 @@ iOSに関しての知見を集める
 ```swift
 
 private lazy var
+最初のアクセス時にインスタンスが作られる
+selfが存在してから呼ばれることが保証されるので、インスタンス生成時にselfが使えるメリットあり
 
 lazy loading means that it will not actually load that property on till it's time for it to happen
 
 https://www.slideshare.net/tomohirokumagai54/lazy-var-cocoakansai-cswift
 
 weak var
+protocolに対して使用？delegateを強参照で持つと親子共にメモリから解放されなくなる
 
 fileprivate func
+ファイル内でのみ参照される
 
 などなど調べる
 
