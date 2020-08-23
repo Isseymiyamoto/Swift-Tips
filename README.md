@@ -120,6 +120,39 @@ let oneNotification = NotificationType.follow
     // bには""が代入される
 ```
 
+### オプショナル束縛(optional binding)構文
+
+#### if-let文
+
+オプショナル方の式の値がnilではなかった場合、その値をif文のthen節で使いたい場合に利用する
+使用したい変数がnilでない値を持っていた場合、その値が開示されて左辺の変数に代入される
+条件部で定義された変数や定数はthen節でのみ参照されるが、この変数や定数に、元のオプショナル方の変数などと同じ名前を使うこともできる
+二つの変数をコンマで区切って連続して定義することも可能
+
+ex
+```swift
+
+let birthYear: Int? = Int(1998)
+
+if let year = birthYear{
+  print(year)
+}
+
+```
+
+#### guard文
+
+オプショナル束縛に限定した構文ではないが、想定外の状況が発生した場合にその処理から抜け出すための構文
+
+構文
+```swift
+guard 条件 else { break や return }
+```
+
+条件に記述した条件が成立しなかった場合にelse節が実行され、そのコードブロックから抜け出す
+
+
+
 ## UIKitに関する情報
 
 
@@ -353,3 +386,5 @@ init(coder: NSCoder)
 storyboards や nib を利用する場合に必要
 
 init()
+
+```
