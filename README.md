@@ -272,7 +272,45 @@ UIStackViewに関する基本的な設定(よく使うプロパティ、関数�
 > https://qiita.com/yucovin/items/ff58fcbd60ca81de77cb
 
 ## searchController
-後でまとめる
+
+// UITableViewに検索バーをつける場合
+
+```swift
+
+// MARK: - Properties
+
+private var isSearchMode: Bool {
+    return searchController.isActive && !searchController.searchBar.text!.isEmpty
+}
+    
+// UITableViewに検索バーを設ける
+private let searchController = UISearchController(searchResultsController: nil)
+
+
+// MARK: - Helpers
+
+func configureSearchController(){
+    searchController.searchResultsUpdater = self
+    searchController.obscuresBackgroundDuringPresentation = false
+    searchController.hidesNavigationBarDuringPresentation = false
+    searchController.searchBar.tintColor = .shishaColor
+    searchController.searchBar.placeholder = "友達を探してみましょう"
+    navigationItem.searchController = searchController
+    definesPresentationContext = false
+}
+
+// MARK: - UISearchResultsUpdating
+
+extension class名: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let searchText = searchController.searchBar.text?.lowercased() else { return }
+        フィルターした配列 = 全部入った配列.filter({ $0.プロパティ.contains(searchText) || $0.プロパティ.contains(searchText) })
+    }
+}
+
+```
+
+
 
 
 ## UINavigationController関連
