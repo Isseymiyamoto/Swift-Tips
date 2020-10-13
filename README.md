@@ -310,6 +310,24 @@ extension class名: UISearchResultsUpdating{
 
 ```
 
+### UITextView
+
+```
+
+let textView: UITextView = {
+    let tv = UITextView()
+    tv.isScrollEnabled = true
+    tv.isEditable = false
+    tv.isSelectable = false
+    
+    // textに対して、marginをつける方法
+    tv.textContainerInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
+    
+    return tv
+}()
+
+```
+
 
 
 
